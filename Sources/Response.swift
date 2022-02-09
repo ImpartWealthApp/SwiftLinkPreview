@@ -9,7 +9,7 @@
 import Foundation
 
 
-public struct Response {
+public struct Response: Codable {
     public init(url: URL?, finalUrl: URL?, canonicalUrl: String?, title: String?, description: String?, images: [String]?, image: String?, icon: String?, video: String?, price: String?) {
         self.url = url
         self.finalUrl = finalUrl
